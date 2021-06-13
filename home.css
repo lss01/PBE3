@@ -1,0 +1,112 @@
+body{
+    background-color: #FBF2EF;
+}
+
+.logo{
+    margin-left: 35%;
+    margin-top: -2%;
+    width: 30%;
+}
+
+/*Nav bar*/
+ul {
+    list-style-type: none;
+    margin-left:-2%;
+    overflow: hidden;
+    margin-top:-1%;
+    width: 100%;
+    background-color: #333;
+  }
+  
+li {
+    float: left;
+}
+  
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h2{
+    text-align: center;
+    margin-top:-1%;
+    background-color:#FA5858;
+    color: white;
+    height:25%;
+    width:20%;
+    margin-left: 40%;
+}
+
+p{
+    width:90%;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+
+
+/*Promos text*/
+.threeD {
+    color: #B40404;
+    margin-top:21%;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-shadow: 1px 1px 0 #F5A9A9, 1px 2px 0 #F5A9A9, 1px 3px 0 #F5A9A9, 1px 4px 0 #F5A9A9,
+      1px 5px 0 #F5A9A9, 1px 6px 0 #F5A9A9, 1px 7px 0 #F5A9A9, 1px 8px 0 #F5A9A9,
+      5px 13px 15px #8A0808;
+  }
+  
+  .threeD:hover {
+    transition: 0.3s;
+    transform: scale(1.1)translate(-50%, -50%);
+    text-shadow: 1px -1px 0 #F5A9A9, 1px -2px 0 #F5A9A9, 1px -3px 0 #F5A9A9,
+      1px -4px 0 #F5A9A9, 1px -5px 0 #F5A9A9, 1px -6px 0 #F5A9A9, 1px -7px 0 #F5A9A9,
+      1px -8px 0 #F5A9A9, 5px -13px 15px #8A0808, 5px -13px 25px #F5A9A9;
+  }
+
+img {
+    margin-left: 21%;
+}
+
