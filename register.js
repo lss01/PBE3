@@ -20,18 +20,18 @@ function ValidateDOB() {
         var dtDOB = new Date(parts[1] + "/" + parts[0] + "/" + parts[2]);
         var dtCurrent = new Date();
         lblError.innerHTML = "Eligibility over 25 years ONLY."
-        if (dtCurrent.getFullYear() - dtDOB.getFullYear() > 25) {
+        if (dtCurrent.getFullYear() - dtDOB.getFullYear() < 25) {
             return false;
         }
 
         if (dtCurrent.getFullYear() - dtDOB.getFullYear() < 25) {
 
-            //CD: 11/06/2018 and DB: 15/07/2000. Will turned 18 on 15/07/2018.
+            
             if (dtCurrent.getMonth() < dtDOB.getMonth()) {
                 return false;
             }
             if (dtCurrent.getMonth() == dtDOB.getMonth()) {
-                //CD: 11/06/2018 and DB: 15/06/2000. Will turned 18 on 15/06/2018.
+                
                 if (dtCurrent.getDate() < dtDOB.getDate()) {
                     return false;
                 }
